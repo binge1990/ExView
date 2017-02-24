@@ -1,8 +1,9 @@
 (function(){
+	if(typeof("isdesktop")=="undefined") var isdesktop=function(){return false;}
 	//初始化设置
 	var notificationid="2017.02.24";
 	var newestversion="2.3.6";
-	// var notificationinfo="声明：ExView是一个浏览器应用，如果你发现有侵权资源，请不要找我，去找相关站点，你们反编译可以看见ExView就是一个基于WebView的套壳浏览器，你们总不能说浏览器变换一下页面界面就侵权吧！<br>备注:安卓4.0-4.4，请去网盘下载高性能版或使用ExView+,4.4以上WebView性能低下的ROM系统也去下载ExView+！<br>通告：新架构2.2已经不兼容2.2以下的来源，请更新应用版本至2.2以上，和更新所有来源至2.2以上！";
+	//var notificationinfo="声明：ExView是一个浏览器应用，如果你发现有侵权资源，请不要找我，去找相关站点，你们反编译可以看见ExView就是一个基于WebView的套壳浏览器，你们总不能说浏览器变换一下页面界面就侵权吧！<br>备注:安卓4.0-4.4，请去网盘下载高性能版或使用ExView+,4.4以上WebView性能低下的ROM系统也去下载ExView+！<br>通告：新架构2.2已经不兼容2.2以下的来源，请更新应用版本至2.2以上，和更新所有来源至2.2以上！";
 	var notificationinfo="【最新】因<b class=\"color-red\">酷安用户@敖厂长</b>的恐怖袭击导致再次翻车，请各位老阿訇们凭10+捐赠凭证或驾校毕业证明，找本人要藏经阁钥匙，下次加强藏经阁的安保工作，异端何曾多，留点门路给你们玩，你们就是不领情。。。<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从酷安市场下载的，请从酷安市场下载最新版，否则造成的损失均与本人无关！";//"Windows正式版0.0.1，现在可以从网盘下载啦，欢迎使用，免费下载，免安装，双击或解压运行即可！";
 	var newestversioninfo="2017.02.19 2.3.6<br>1.增加QQ登陆模块，登陆绑定QQ，才能生效VIP<br>2.修复若干小问题<br>3.发布Windows正式版0.0.2";
 	var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
@@ -19,13 +20,13 @@
 		var dur=flag.dur;
 		return '<text y="'+y+'" x="'+x+'" fill="'+color+'" style="font-size:'+size+';box-sizing:border-box">'+text+'<animate attributeName="x" from="'+from+'" to="'+to+'" begin="'+begin+'" dur="'+dur+'" repeatCount="indefinite" style="box-sizing:border-box;"></animate></text>';
 	};
-	var getthanksuser=function(flag){
+	var getthanksuser=function(flag,index){
 		var name=flag.name;
 		var title=flag.title;
 		var qq=flag.qq;
 		var img=flag.img;
 		if(!name||(!qq&&!img))return '';
-		return '<div class="chip" style="box-shadow: 3px 3px 3px gray;background:rgb(57, 57, 57)"><div class="chip-media" style="background-image: url('+(img||'http://q.qlogo.cn/headimg_dl?bs=qq&amp;dst_uin='+qq+'&fid=blog&spec=100')+');background-size: contain;"></div><div class="chip-label">'+name+'<span class="color-red">【'+title+'】</span></div></div>';
+		return '<div class="chip'+(index==0?" active":"")+'" onclick="addDmsChipClickEvent(this)" style="box-shadow: 3px 3px 3px gray;background:rgb(57, 57, 57)"><div class="chip-media" style="background-image: url('+(img||'http://q.qlogo.cn/headimg_dl?bs=qq&amp;dst_uin='+qq+'&fid=blog&spec=100')+');background-size: contain;"></div><div class="chip-label">'+name+'<span class="color-red">【'+title+'】</span></div></div>';
 	};
 	var dmsjson=[
 		{y:40,x:299.263,color:"rgb(235,166,36)",size:"1em",text:"好牛啊，好厉害",from:800,to:-400,begin:"3s",dur:"11s"},
@@ -54,7 +55,7 @@
 	localStorage.ExView_Viewerendextra='<div align="center" style="width:100%;height:100%"><iframe style="width:320px;height:280px;margin-top:calc(100% - 170px);" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
 	localStorage.ExView_IndexInfo='<div align="center" style="width:100vw"><iframe scrolling="no" frameborder="0" src="http://exview.gtool.ml/gad/468_60.html'+'?'+(new Date().getTime())+'" style="margin-left:-16px;width: 468px;height:80px;"></iframe></div>';
 
-	localStorage.aboutlistcontent='<li class="accordion-item"><a href="#" class="item-link item-content"><div class="item-inner"><div class="item-title">作者</div></div></a><div class="accordion-item-content"><div class="content-block"><table><tbody><tr><td style="overflow: hidden;width: 33%;"><img width="100%" src="img/logo.png"/></td><td style="padding: 10px;overflow:auto;white-space:nowrap;">【作者】Gentle Kwan<br/>【联系】gentlekwan@hotmail.com<br/>【QQ】1275731466<br/>【公众号】光与影交错的时空<br/>【支付宝】ghostgzt@163.com<br/>【Paypal】ghostgzt@gmail.com<br/>秋名山驾校：<br/>【①车道】262577997<br/>【②车道】274695822<br/>【③车道】416613442<br/>【④车道】591859003<br/>【⑤车道】542710954<br/>捐赠10+，送驾照！<br/>捐赠50+，送VIP去广告！<br/>捐赠后添加微信ghostgzt，出示凭证</td></tr></tbody></table></div></div></li>';
+	localStorage.ExView_Aboutlistcontent='<li class="accordion-item"><a href="#" class="item-link item-content"><div class="item-inner"><div class="item-title">作者</div></div></a><div class="accordion-item-content"><div class="content-block"><table><tbody><tr><td style="overflow: hidden;width: 33%;"><img width="100%" src="img/logo.png"/></td><td style="padding: 10px;overflow:auto;white-space:nowrap;">【作者】Gentle Kwan<br/>【联系】gentlekwan@hotmail.com<br/>【QQ】1275731466<br/>【公众号】光与影交错的时空<br/>【支付宝】ghostgzt@163.com<br/>【Paypal】ghostgzt@gmail.com<br/>秋名山驾校：<br/>【①车道】262577997<br/>【②车道】274695822<br/>【③车道】416613442<br/>【④车道】591859003<br/>【⑤车道】542710954<br/>捐赠10+，送驾照和教程！<br/>捐赠50+，送VIP去广告、红名显示、导出本子！<br/>捐赠后添加微信ghostgzt，出示凭证</td></tr></tbody></table></div></div></li>';
 	localStorage.ExView_groupIds=["262577997","274695822","416613442","591859003","542710954"];
 	//(localStorage.ExView_IndexInfo&&!getvipdisp(mySession.personinfo.name)&&navigator.onLine!=false/*&&!window.debug*/)&&$$(localStorage.ExView_IndexInfo).insertAfter($$(".page[data-page='Index'] .presoninfo_bg"));
 	localStorage.ExView_Prehandle='(localStorage.ExView_IndexInfo&&!getvipdisp(mySession.personinfo.name)&&navigator.onLine!=false/*&&!window.debug*/)&&$$(localStorage.ExView_IndexInfo).insertAfter($$(".page[data-page=\'Index\'] .presoninfo_bg"));';
@@ -91,16 +92,22 @@
 
 	//弹幕显示
 	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'http://pan.baidu.com/s/1dFCvgsx\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">酷安下载</a>'
-	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?updatepath:'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
-	+'<div style="padding: 10px;border: 3px black solid;"><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
+	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
+	+'<div id="thankspanel" style="padding:10px;border:3px black solid;"><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
 	
-	+(thanksjson.map(function(user){return getthanksuser(user);}).join(""))
+	+(thanksjson.map(function(user,i){return getthanksuser(user,i);}).join(""))
 	
 	+'</div><div style="background: black;"><img style="display:none;" src="img/loading.png" width="100%"  onclick="event.stopPropagation();$$(this).next().css(\'background-image\',\'url(img/loading.png)\');$$(this).css(\'display\',\'none\');$$(this).next().css(\'margin-top\',\'0\')">'
 	+'<svg class="xhr" xmlns="http://www.w3.org/2000/svg" style="width:100%;height: 20em;background-size: cover;background-position: top;background-image:url(img/loading.png); box-sizing:border-box" onclick="event.stopPropagation();$$(this).css(\'background-image\',\'none\');$$(this).prev().css(\'display\',\'block\');$$(this).css(\'margin-top\',\'-20em\')">'
+	
 	+(dmsjson.map(function(dms){return getdms(dms);}).join(""))
+	
 	+'</svg>'
 	+'</div>');
+	window.addDmsChipClickEvent=function(_this){
+		$$("#thankspanel .chip").removeClass("active");
+		$$(_this).addClass("active");
+	}
 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'){
 		Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('v(["s","m"].u(2.b.c.f(\'6 9!\'+0.4+\'6 9!\'))==-1&&!d.e){7 0.4;g.h="i";7 0.j;2.k.l("\\8\\8\\n\\o\\p\\q\\r~<5>\\t\\3\\a\\w\\x\\y\\z\\A\\B+\\3\\a\\C\\D\\E\\F\\G\\H<5>\\3\\I+\\J\\K\\L\\M",N.O,P(){2.Q.R.S(1)});T U();}',57,57,'localStorage||ExView|u6350|ExView_InitJSON|br|Keep|delete|u597d|Out|u8d60|tools|md5|window|debug|hex_md5|mySession|initjsonpath|RtuFEqa|ExView_InitType|fw|alert|552bc26417cb2969badc8f1229797571|u5750|u516c|u4ea4|u8f66|u5427|9c072c6d89e86e513b2b66af163cf30f|u5df2|indexOf|if|u7684|u8001|u53f8|u673a|uff0c|u51ed10|u51ed|u636e|u627e|u4f5c|u8005|uff01|u8d6050|u53bb|u5e7f|u544a|u9001VIP|sessionStorage|modaltitleextra|function|modules|pluginpage|init|throw|SyntaxError'.split('|'),0,{}))()	
 	}
