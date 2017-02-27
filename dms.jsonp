@@ -1,5 +1,5 @@
 (function(){
-	if(typeof("isdesktop")=="undefined") var isdesktop=function(){return false;}
+	if(typeof(isdesktop)=="undefined") var isdesktop=function(){return false;}
 	//初始化设置
 	var notificationid="2017.02.24";
 	var notificationinfo="【最新】因<b class=\"color-red\">酷安用户@敖厂长</b>的恐怖袭击导致再次翻车，请各位老阿訇们凭10+捐赠凭证或驾校毕业证明，找本人要藏经阁钥匙，下次加强藏经阁的安保工作，异端何曾多，留点门路给你们玩，你们就是不领情。。。<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从酷安市场下载的，请从酷安市场下载最新版，否则造成的损失均与本人无关！";
