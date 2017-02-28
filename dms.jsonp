@@ -13,8 +13,8 @@
 		var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';	
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.0.4";
-		var newestversioninfo="修复https发起本地请求失败bug";
+		var newestversion="0.0.5";
+		var newestversioninfo="1.修复图片加载不全bug<br>2.修复原生输入框一些bug";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 	}
 	
