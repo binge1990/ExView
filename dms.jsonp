@@ -77,7 +77,6 @@
 	
 	
 	
-
 	//通知显示
 	try{
 		if(window.debug&&nowversion!=newestversion){
