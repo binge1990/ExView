@@ -1,21 +1,40 @@
 (function(){
 	//初始化设置
-	var notificationid="2017.02.24";
-	var notificationinfo="【最新】因<b class=\"color-red\">酷安用户@敖厂长</b>的恐怖袭击导致再次翻车，请各位老阿訇们凭10+捐赠凭证或驾校毕业证明，找本人要藏经阁钥匙，下次加强藏经阁的安保工作，异端何曾多，留点门路给你们玩，你们就是不领情。。。<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从酷安市场下载的，请从酷安市场下载最新版，否则造成的损失均与本人无关！";
+	var notificationid="2017.03.05";
+	var notificationinfo="【最新】各位非VIP的老阿訇们，因之前各种翻车事件，最新版升级了驾照认证系统，加<b class='color-red'>微信ghostgzt</b>,凭10+捐赠凭证或驾校毕业证明，并提供QQ号，向作者索要正式驾照，以后不用拼车了~<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从酷安市场下载的，请从酷安市场下载最新版，否则造成的损失均与本人无关！";
 	//var notificationinfo="声明：ExView是一个浏览器应用，如果你发现有侵权资源，请不要找我，去找相关站点，你们反编译可以看见ExView就是一个基于WebView的套壳浏览器，你们总不能说浏览器变换一下页面界面就侵权吧！<br>备注:安卓4.0-4.4，请去网盘下载高性能版或使用ExView+,4.4以上WebView性能低下的ROM系统也去下载ExView+！<br>通告：新架构2.2已经不兼容2.2以下的来源，请更新应用版本至2.2以上，和更新所有来源至2.2以上！";
 	function isdesktop(){
 		return navigator.userAgent.toLowerCase().indexOf("exview_desktop")==-1?false:true;
 	}	
+	function isios(){
+		try{
+			if(device.platform=="iOS"){
+				return true;
+			}        
+		}catch(e){
+			return false;
+		}
+	}	
 	if(!isdesktop()){
-		var nowversion=ExView.version;
-		var newestversion="2.3.7";
-		var newestversioninfo="2017.02.27 2.3.7<br>1.强化VIP功能，会员专车，永不翻车<br>2.修复原生输入框，选择取消bug<br>3.界面细节调整<br>4.修复一些已知问题<br>5.发布Windows正式版0.0.3";
-		var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';	
+		if(isios()){
+			var nowversion=ExView.version;
+			var newestversion="2.3.7";
+			var newestversioninfo="IOS10.2越狱版alpha 0.0.1";
+			var updatepath='http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FIOS%E8%B6%8A%E7%8B%B1%E7%89%88&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6';	
+			var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';			
+		}else{
+			var nowversion=ExView.version;
+			var newestversion="2.3.8";
+			var newestversioninfo="2017.03.05 2.3.8<br>1.升级准可证认证机制，根据QQ生成唯一驾照<br>2.修复一些已知问题<br>3.发布Windows正式版0.0.6<br>4.发布IOS10.2越狱版alpha 0.0.1";
+			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';	
+			var feedbackpath=updatepath;			
+		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.0.5";
-		var newestversioninfo="1.修复图片加载不全bug<br>2.修复原生输入框一些bug";
+		var newestversion="0.0.6";
+		var newestversioninfo="1.升级准可证认证机制，根据QQ生成唯一驾照<br>2.修复一些已知问题<br>3.发布IOS10.2越狱版alpha 0.0.1";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
+		var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 	}
 	
 	
@@ -104,7 +123,7 @@
 
 	//弹幕显示
 	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'http://pan.baidu.com/s/1dFCvgsx\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">酷安下载</a>'
-	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
+	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+feedbackpath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
 	+'<div id="thankspanel" style="padding:10px;border:3px black solid;"><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
 	
 	+(thanksjson.map(function(user,i){return getthanksuser(user,i);}).join(""))
