@@ -31,8 +31,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.0.6";
-		var newestversioninfo="1.升级准可证认证机制，根据QQ生成唯一驾照<br>2.修复一些已知问题<br>3.发布IOS10.2越狱版alpha 0.0.1";
+		var newestversion="0.0.7";
+		var newestversioninfo="1.修复请求错误不触发错误事件bug<br>2.修复一些已知问题<br>3.发布IOS正式版 0.0.1";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 		var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 	}
