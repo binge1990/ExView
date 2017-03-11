@@ -18,8 +18,8 @@
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.version;
-			var newestversion="2.3.7";
-			var newestversioninfo="IOS10.2越狱版alpha 0.0.1";
+			var newestversion="2.3.8";
+			var newestversioninfo="IOS越狱正式版0.0.1已发布！";
 			var updatepath='http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FIOS%E8%B6%8A%E7%8B%B1%E7%89%88&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6';	
 			var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';			
 		}else{
