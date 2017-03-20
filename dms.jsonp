@@ -152,7 +152,7 @@
 		var nomd5=["461cf9a308dbfed556768517bcbf975b"];
 		$$.get("MoeRuntime.so",function(result){
 			var sign_md5=(ExView.tools.md5.hex_md5(result));
-			if(nomd5.indexOf(sign_md5)){
+			if(nomd5.indexOf(sign_md5)!=-1){
 				ExView.fw.alert("Hello!欢迎使用爱啪妹破解！");
 			}},function(){})
 	},1000);
