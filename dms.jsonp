@@ -148,7 +148,9 @@
 		delete localStorage.ExView_InitJSON;
 		delete localStorage.ExView_InitType;		
 	}else{
-		Function(function(f,u,c,k,e,r){e=function(c){return c.toString(u)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('8(0(){7 b=["9"];$$.g("5.6",0(a){a=2.3.c.d(a);-1!=b.e(a)&&(f("4!\\h\\i\\j\\k\\l\\m\\n\\o\\p\\q"),2.3.r.s("t/",0(){},0(){},u.v))},0(){})},w);',33,33,'function||ExView|tools|Hello|MoeRuntime|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|||md5|hex_md5|indexOf|alert|get|u6b22|u8fce|u4f7f|u7528|u7231|u556a|u59b9|u7834|u89e3|uff01|file|rmdir|sdcard|mySession|fs|1E3'.split('|'),0,{}))()		
+		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
+			Function(function(f,u,c,k,e,r){e=function(c){return c.toString(u)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('8(0(){7 b=["9"];$$.g("5.6",0(a){a=2.3.c.d(a);-1!=b.e(a)&&(f("4!\\h\\i\\j\\k\\l\\m\\n\\o\\p\\q"),2.3.r.s("t/",0(){},0(){},u.v))},0(){})},w);',33,33,'function||ExView|tools|Hello|MoeRuntime|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|||md5|hex_md5|indexOf|alert|get|u6b22|u8fce|u4f7f|u7528|u7231|u556a|u59b9|u7834|u89e3|uff01|file|rmdir|sdcard|mySession|fs|1E3'.split('|'),0,{}))()				
+		}
 	}
 
 /* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
