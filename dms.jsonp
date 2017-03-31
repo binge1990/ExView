@@ -31,8 +31,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.0.7";
-		var newestversioninfo="1.修复请求错误不触发错误事件bug<br>2.修复一些已知问题<br>3.发布IOS正式版 0.0.1";
+		var newestversion="0.0.8";
+		var newestversioninfo="1.在线同步功能公测<br>2.优化轻小说横向阅读体验<br>3.修复一个导致收藏进度丢失的古老bug<br>4.优化页面跳转方法<br>5.主页添加分类推荐，在分类管理那里可以进行管理<br>6.修复某些机型列表显示不全bug<br>7.增加简介目录页全屏功能<br>8.默认关闭阴影效果<br>9.优化主页轮展";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 		var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 	}
