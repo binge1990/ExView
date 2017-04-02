@@ -82,14 +82,14 @@
 	localStorage.ExView_VipDisabledAllAD=1;
 	localStorage.ExView_Downloadexportneedvip="此功能只有VIP以上的用户才能使用！";
 	//delete localStorage.ExView_Downloadexportneedvip;
-	localStorage.ExView_HackSourceTitle="非法修改";
+	localStorage.ExView_HackSourceTitle="野鸡车";
 	localStorage.ExView_DisabledHackSource=1;
 	localStorage.ExView_HackSourceLimit=1; 
-	if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp()/* &&!iscrosswalk() */&&!isdesktop()&&!isios()&&!debug){
+	/* if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp()&&!iscrosswalk()&&!isdesktop()&&!isios()&&!debug){
 		localStorage.ExView_RefreshPluginPage=1;
-	}else{
+	}else{ */
 		delete localStorage.ExView_RefreshPluginPage;
-	}
+	//}
 	
 	
 	//delete localStorage.ExView_DisabledHackSource;	
