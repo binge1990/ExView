@@ -85,7 +85,7 @@
 	/* localStorage.ExView_HackSourceTitle="非法修改";
 	localStorage.ExView_DisabledHackSource=1;
 	localStorage.ExView_HackSourceLimit=3; */
-	if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp()&&!iscrosswalk()&&!isdesktop()&&!isios()&&!debug){
+	if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp()/* &&!iscrosswalk() */&&!isdesktop()&&!isios()&&!debug){
 		localStorage.ExView_RefreshPluginPage=1;
 	}else{
 		delete localStorage.ExView_RefreshPluginPage;
