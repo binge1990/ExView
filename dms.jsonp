@@ -93,18 +93,18 @@
 	localStorage.ExView_VipDisabledAllAD=1;
 	localStorage.ExView_Downloadexportneedvip="此功能只有VIP以上的用户才能使用！";
 	//delete localStorage.ExView_Downloadexportneedvip;
-	localStorage.ExView_HackSourceTitle="野鸡车";
-	localStorage.ExView_DisabledHackSource=1;
-	localStorage.ExView_HackSourceLimit=1; 
-	try{
-		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp() /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
-			localStorage.ExView_RefreshPluginPage=1;
-		}else{  
-			delete localStorage.ExView_RefreshPluginPage;
-		}
-	}catch(e){}	
+	// localStorage.ExView_HackSourceTitle="野鸡车";
+	// localStorage.ExView_DisabledHackSource=1;
+	// localStorage.ExView_HackSourceLimit=1; 
+	// try{
+		// if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp() /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
+			// localStorage.ExView_RefreshPluginPage=1;
+		// }else{  
+			// delete localStorage.ExView_RefreshPluginPage;
+		// }
+	// }catch(e){}	
 	
-	//delete localStorage.ExView_DisabledHackSource;	
+	delete localStorage.ExView_DisabledHackSource;	
 	localStorage.ExView_Vphotomodendextra='<div align="center" style="width:100%;height:280px"><iframe xonload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
 	localStorage.ExView_Viewerendextra='<div align="center" style="width:100%;height:100%"><iframe xonload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;margin-top:calc(100% - 170px);" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
 	localStorage.ExView_IndexInfo='<div align="center" style="width:100vw"><iframe xonload="mySession.handleIframeOnloaded(this,1)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" scrolling="no" frameborder="0" src="http://exview.gtool.ml/gad/468_60.html'+'?'+(new Date().getTime())+'" style="margin-left:-16px;width: 468px;height:80px;"></iframe></div>';
