@@ -28,13 +28,16 @@
 			var nowversion=ExView.version;
 			var newestversion="2.3.8";
 			var newestversioninfo="IOS越狱正式版0.0.1已发布！";
-			var updatepath='http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FIOS%E8%B6%8A%E7%8B%B1%E7%89%88&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6';	
-			var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';			
+			/*var updatepath='http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FIOS%E8%B6%8A%E7%8B%B1%E7%89%88&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6';	
+			var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';*/
+			var updatepath='http://exview.gtool.ml/ExView/android.html';
+			var feedbackpath='http://exview.gtool.ml/ExView/android.html';
 		}else{
 			var nowversion=ExView.version;
 			var newestversion="2.4.0";
 			var newestversioninfo="2017.04.18 2.4.0<br>1.实现沉浸状态栏<br>2.加快启动速度<br>3.详情页面修改<br>4.修复标签空格bug<br>5.优化侧栏滑动<br>6.鉴于有小学生那所谓破解方法去倒卖，升级来源管理机制，请大家重新安装所有来源规则<br>7.修复安全漏洞，升级用户系统，请大家重新登陆，见谅！<br>8.小说阅读体验小优化<br>9.修复一些已知问题";
-			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';	
+			//var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
+			var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath=updatepath;			
 		}
 	}else{
