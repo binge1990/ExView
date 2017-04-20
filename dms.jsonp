@@ -167,7 +167,10 @@
 	} */	
 try{
 	if(getvipdisp()/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
-		mySession.initjsonpath="RtuFrCI"/* mySession.backinitjsonpath */;
+		mySession.initjsonpath=mySession.driverjsonpath/* mySession.backinitjsonpath */;
+		var salt=ExView.tools.md5.hex_md5(localStorage.ExView_LoginUser);
+		localStorage.ExView_InitJSONVerify=btoa(salt+initjsonverify(localStorage.ExView_InitJSON,localStorage.ExView_LoginUser,salt)+salt);
+		exviewdata.setItem("ExView_InitJSONVerify",localStorage.ExView_InitJSONVerify);		
 		//delete localStorage.ExView_InitJSON;
 		//delete localStorage.ExView_InitType;		
 	}/* else{
