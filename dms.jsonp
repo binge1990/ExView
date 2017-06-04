@@ -36,8 +36,8 @@
 			var nowversion=ExView.version;
 			var newestversion="2.4.1";
 			var newestversioninfo="2017.05.05 2.4.1<br>1.优化主页加载<br>2.添加网址提示<br>3.修正轻小说阅读器翻页偏移<br>4.修正若干处内存泄露<br>5.优化下载功能<br>6.修正4.4系统列表切换自动滚动bug<br>7.优化大图切割算法<br>8.优化因大规模网络请求导致最新更新，热门推荐等列表出现卡死现象<br>9.修复下载偶尔出现错误问题";
-			//var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
-			var updatepath='http://exview.gtool.ml/ExView/android.html';	
+			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
+			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath=updatepath;			
 		}
 	}else{
