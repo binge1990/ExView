@@ -34,16 +34,16 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.4.2";
-			var newestversioninfo="2017.06.18 2.4.2<br>1.修复HttpClient无法Post非序列化数据bug<br>2.修复综合搜索和相关搜索有时无法使用bug<br>3.修复简介页信息出错时，目录章节无法显示bug<br>4.阅读界面默认显示状态栏<br>5.修正历史纪录排序异常bug";
+			var newestversion="2.4.3";
+			var newestversioninfo="2017.07.17 2.4.3<br>1.修复下载管理空文件夹bug<br>2.修复下载管理乱序bug<br>3.修复取消后重新加载下一话序号出错bug<br>4.修复没有收藏时列表空白bug<br>5.提升大图切割分辨率<br>6.修复功能组件有时消失bug<br>7.添加“章节直接打开不预览”和“精准搜索”两个选项设置,默认关闭水纹效果<br>8.修复一个因回收内存导致页面图片无法解析加载严重的bug<br>9.修复下载导致阅读进度错乱bug<br>10.增加弹幕播放器";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath=updatepath;			
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.1.1";
-		var newestversioninfo="2017.06.18 2.4.2<br>1.修复HttpClient无法Post非序列化数据bug<br>2.修复综合搜索和相关搜索有时无法使用bug<br>3.修复简介页信息出错时，目录章节无法显示bug<br>4.阅读界面默认显示状态栏<br>5.修正历史纪录排序异常bug";
+		var newestversion="0.1.2";
+		var newestversioninfo="2017.07.17 2.4.3<br>1.修复下载管理空文件夹bug<br>2.修复下载管理乱序bug<br>3.修复取消后重新加载下一话序号出错bug<br>4.修复没有收藏时列表空白bug<br>5.提升大图切割分辨率<br>6.修复功能组件有时消失bug<br>7.添加“章节直接打开不预览”和“精准搜索”两个选项设置,默认关闭水纹效果<br>8.修复一个因回收内存导致页面图片无法解析加载严重的bug<br>9.修复下载导致阅读进度错乱bug<br>10.增加弹幕播放器";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 		var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 	}
