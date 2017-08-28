@@ -1,3 +1,9 @@
+if(!localStorage.ExView_LoginUser){
+    InitJSON({"plugins":[],
+    "title":"服务器上的来源规则：<div style='white-space:normal;'>版本太久，请升级最新版！</div><div><iframe onload='mySession.handleIframeOnloaded(this,1)' sandbox='allow-same-origin allow-scripts allow-popups allow-forms' scrolling='no' frameborder='0' src='http://exview.gtool.ml/gad/468_60.html"+'?'+(new Date().getTime())+"' style='margin-left:-16px;width:100vw;height:80px;'></iframe></div>",
+    "type":"报废车"
+    })  
+}else{
 InitJSON({"plugins":[
 {"name":"WebApp",type:"功能","icon":getbaiduimg("20c8e3ef76094b36c7a8e53ba4cc7cd98c109d97"),"title":"轻应用","version":"2.3.2","author":"Gentle","disabled":"","text":"功能组件:轻应用(2.3版本以上)","url":"https://raw.githubusercontent.com/ghostgzt/ExView/master/features/WebApp.jsm"},
 {"name":"WeekAnimate",type:"功能","icon":getbaiduimg("d3304434970a304eeae53a66d7c8a786c8175c12"),"title":"动画追番表","version":"2.3.7","author":"Gentle","disabled":"","text":"功能组件:动画追番表(2.3版本以上)","url":"https://raw.githubusercontent.com/ghostgzt/ExView/master/features/WeekAnimate.jsm"},
@@ -74,3 +80,4 @@ InitJSON({"plugins":[
 "title":"服务器上的来源信息<div><iframe onload='mySession.handleIframeOnloaded(this,1)' sandbox='allow-same-origin allow-scripts allow-popups allow-forms' scrolling='no' frameborder='0' src='http://exview.gtool.ml/gad/468_60.html"+'?'+(new Date().getTime())+"' style='margin-left:-16px;width:100vw;height:80px;'></iframe></div>",
 "type":"灵车漂移"
 })
+}
