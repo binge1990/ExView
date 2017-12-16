@@ -34,16 +34,16 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.4.6";
-			var newestversioninfo="2017.10.01 2.4.6<br>1.引入新的选择器，加强网页解析能力<br>2.引入新的WebView扩展库，增强解析能力<br>3.修复图片刷新按钮失效bug<br>4.修复一个图片保存问题导致图片无法显示bug<br>5.优化dom选择器";
+			var newestversion="2.4.7";
+			var newestversioninfo="2017.12.16 2.4.7<br>1.调整图片阅读器末页界面<br>2.优化条漫单手阅读体验<br>3.调整条漫阅读器功能界面<br>4.升级视频播放器<br>5.升级条漫阅读器图片加载算法，解决载入大量图片导致卡死bug<br>6.修复弹幕播放器不能调出控制条bug<br>7.修复弹幕播放器不能调节进度bug<br>8.视频播放器添加“链接”按钮用来复制视频链接<br>9.修复一些兼容性问题<br>10.修复一个收藏进度偶尔丢失的bug";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.1.6";
-		var newestversioninfo="2017.10.01 2.4.6<br>1.引入新的选择器，加强网页解析能力<br>2.引入新的WebView扩展库，增强解析能力<br>3.修复图片刷新按钮失效bug<br>4.修复一个图片保存问题导致图片无法显示bug<br>5.优化dom选择器";
+		var newestversion="0.1.7";
+		var newestversioninfo="2017.12.16 2.4.7<br>1.调整图片阅读器末页界面<br>2.优化条漫单手阅读体验<br>3.调整条漫阅读器功能界面<br>4.升级视频播放器<br>5.升级条漫阅读器图片加载算法，解决载入大量图片导致卡死bug<br>6.修复弹幕播放器不能调出控制条bug<br>7.修复弹幕播放器不能调节进度bug<br>8.视频播放器添加“链接”按钮用来复制视频链接<br>9.修复一些兼容性问题<br>10.修复一个收藏进度偶尔丢失的bug";
 		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
 		var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//'http://www.coolapk.com/apk/com.gentle.exview';
 	}
