@@ -165,6 +165,31 @@
 		if(isios()){
 			mySession.initjsonpath="RtuFrCI"
 			localStorage.ExView_InitJSON=mySession.initjsonpath;
+			ExView.fw.confirm("是否无法获取数据？",function(){
+				$$.ajax({
+					url: "http://t.cn/" + mySession.initjsonpath + "?_=" + (new Date).getTime(),
+					success: function (result) {
+						ExView.fw.hidePreloader();
+						mySession.isloading = 0;
+						try {
+							eval(result);
+						} catch (e) {
+							ExView.fw.alert("远程获取信息失败！", "ExView");
+						}
+						result = null;
+
+					},
+					complete: function (a, b) {
+						if (b != 200) {
+							ExView.fw.hidePreloader();
+							mySession.isloading = 0;
+							ExView.fw.alert("远程获取信息失败！", "ExView");
+						}
+					}
+				})
+			})
+			
+			
 			return true;
 		}
 	}catch(e){
