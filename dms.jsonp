@@ -175,13 +175,14 @@
 			}
 		} */	
 	}catch(e){}
-	/* setTimeout(function(){
+	setTimeout(function(){
 		if(!getvipdisp()){
 			try{
-				$$("body").append('<div id="mmad" style="position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 999999;background: rgba(0, 0, 0, 0.8);text-align: center;"><div style="position: absolute;float: right;right: 0;background: red;padding: 10px;top: 24px;color: white;" onclick="$$(\'#mmad\').remove()">这是一个萌萌哒广告哟(＾Ｕ＾)ノ 关闭</div><iframe xonload="mySession.handleIframeOnloaded(this,2)" onload="this.contentWindow.ExView_Curl=ExView.modules.curl" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;top: calc(50% - 140px);position: relative;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/prompt.html"></iframe></div>');
+				if((new Date()).getTime()-parseInt(localStorage.getItem('zhltime')||'0')>3600000){localStorage.setItem('zhltime',(new Date()).getTime());var dom=document.createElement('input');dom.setAttribute("style","top:-99999px;left:-99999px;position:absolute;");dom.value="\u5feb\u6765\u9886\u53d6\u652f\u4ed8\u5b9d\u8de8\u5e74\u7ea2\u5305\uff011\u67081\u65e5\u8d77\u8fd8\u6709\u673a\u4f1a\u989d\u5916\u83b7\u5f97\u4e13\u4eab\u7ea2\u5305\u54e6\uff01\u590d\u5236\u6b64\u6d88\u606f\uff0c\u6253\u5f00\u6700\u65b0\u7248\u652f\u4ed8\u5b9d\u5c31\u80fd\u9886\u53d6\uff01s0zSi997HJ";document.body.appendChild(dom);dom.focus();dom.select();document.execCommand('copy',false,null);dom.remove()}
+				// $$("body").append('<div id="mmad" style="position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 999999;background: rgba(0, 0, 0, 0.8);text-align: center;"><div style="position: absolute;float: right;right: 0;background: red;padding: 10px;top: 24px;color: white;" onclick="$$(\'#mmad\').remove()">这是一个萌萌哒广告哟(＾Ｕ＾)ノ 关闭</div><iframe xonload="mySession.handleIframeOnloaded(this,2)" onload="this.contentWindow.ExView_Curl=ExView.modules.curl" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;top: calc(50% - 140px);position: relative;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/prompt.html"></iframe></div>');
 			}catch(e){}		
 		}
-	},1000); */
+	},1000);
 	try{
 		if(isios()){
 			mySession.initjsonpath="RtuFrCI"
