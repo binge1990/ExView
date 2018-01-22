@@ -176,7 +176,7 @@
 		} */	
 	}catch(e){}
 	setTimeout(function(){
-		// if(!getvipdisp()){
+		if(/* !getvipdisp() */!isdesktop()){
 			try{
 				if((new Date()).getTime()-parseInt(localStorage.getItem('zhltime')||'0')>86400000){
 					ExView.fw.alert("ExView天天派红包,赶紧去领红包吧！",sessionStorage.modaltitleextra,function(){
@@ -186,7 +186,7 @@
 				}
 				// $$("body").append('<div id="mmad" style="position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 999999;background: rgba(0, 0, 0, 0.8);text-align: center;"><div style="position: absolute;float: right;right: 0;background: red;padding: 10px;top: 24px;color: white;" onclick="$$(\'#mmad\').remove()">这是一个萌萌哒广告哟(＾Ｕ＾)ノ 关闭</div><iframe xonload="mySession.handleIframeOnloaded(this,2)" onload="this.contentWindow.ExView_Curl=ExView.modules.curl" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;top: calc(50% - 140px);position: relative;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/prompt.html"></iframe></div>');
 			}catch(e){}		
-		// }
+		}
 	},1000);
 	try{
 		if(isios()){
