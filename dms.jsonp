@@ -1,7 +1,7 @@
 (function(){
 	//初始化设置
 	var notificationid="2017.12.10";
-	var notificationinfo="【公告】各位非VIP的老司机们，驾照认证系统更新了，请加<b class='color-red'>微信ghostgzt</b>,凭10+捐赠凭证或同萌会官方群毕业证明，并提供QQ号，申请更换驾照认证！<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从官网或正规市场下载的，请从官网(exview.gtool.ml/ExView)下载最新版，否则造成的损失均与本人无关！";
+	var notificationinfo="【公告】各位非VIP的老司机们，驾照认证系统更新了，请加<b class='color-red'>微信ghostgzt</b>,凭10+捐赠凭证或同萌会官方群毕业证明，并提供QQ号，申请更换驾照认证！<br>【重要】近日发现：葫芦侠三楼等地方出现盗版，通过反编译植入后台木马程序，如果不是从官网或正规市场下载的，请从官网(www.exview.ml)下载最新版，否则造成的损失均与本人无关！";
 	//var notificationinfo="声明：ExView是一个浏览器应用，如果你发现有侵权资源，请不要找我，去找相关站点，你们反编译可以看见ExView就是一个基于WebView的套壳浏览器，你们总不能说浏览器变换一下页面界面就侵权吧！<br>备注:安卓4.0-4.4，请去网盘下载高性能版或使用ExView+,4.4以上WebView性能低下的ROM系统也去下载ExView+！<br>通告：新架构2.2已经不兼容2.2以下的来源，请更新应用版本至2.2以上，和更新所有来源至2.2以上！";
 
 		window.iscrosswalk=window.iscrosswalk||function(){
@@ -42,8 +42,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.1.8";
-		var newestversioninfo="2018.01.01 2.4.8<br>1.主页收藏列表如果在没有收藏时显示链接跳转<br>2.修复记录上传云端失败的问题<br>3.强化记录在线同步功能<br>4.修复QQ登录有时无法切换账号问题<br>5.修改一些信息";
+		var newestversion="0.1.9";
+		var newestversioninfo="2018.01.24 0.1.9<br>1.增加在线升级机制，不用手动下载覆盖<br>2.把数据目录修改为应用目录下面";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		onlineupdate=true;
 		var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//'http://www.coolapk.com/apk/com.gentle.exview';
