@@ -140,7 +140,11 @@
 				if(nowversion==newestversion){
 					localStorage.ExView_NotificationId=notificationid;notificationfn();
 				}else{
-					window.open(updatepath,'_system');
+					if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
+						updateDesktopVersion('https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin',newestversion);
+					} else {
+						window.open(updatepath,'_system');
+					}
 				}
 			});}		
 		}
