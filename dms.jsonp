@@ -22,13 +22,13 @@
 		window.getvipdisp=window.getvipdisp||function(){
 			return false;
 		}	
-	
+	var onlineupdate = false;
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.version;
 			var newestversion="2.3.8";
 			var newestversioninfo="IOS越狱正式版0.0.1已发布！";
-			var updatepath='http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FIOS%E8%B6%8A%E7%8B%B1%E7%89%88&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6';	
+			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
@@ -44,7 +44,8 @@
 		var nowversion=ExView.nativeversion;
 		var newestversion="0.1.8";
 		var newestversioninfo="2018.01.01 2.4.8<br>1.主页收藏列表如果在没有收藏时显示链接跳转<br>2.修复记录上传云端失败的问题<br>3.强化记录在线同步功能<br>4.修复QQ登录有时无法切换账号问题<br>5.修改一些信息";
-		var updatepath="http://pan.baidu.com/s/1dFCvgsx#list/path=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6%2FExView%2FWindows&parentPath=%2F%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6";
+		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
+		onlineupdate=true;
 		var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//'http://www.coolapk.com/apk/com.gentle.exview';
 	}
 	
@@ -118,7 +119,12 @@
 	//通知显示
 	try{
 		if(window.debug&&nowversion!=newestversion){
-			shownotice('各位dalao,新版本发布了，赶紧去<a href="'+updatepath+'" target="_system">更新</a>吧！')
+			if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
+				shownotice('各位dalao,新版本发布了，赶紧去<a href="updateDesktopVersion(\'https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin\',\''+newestversion+'\')" target="_system">更新</a>吧！');
+			} else {
+				shownotice('各位dalao,新版本发布了，赶紧去<a href="'+updatepath+'" target="_system">更新</a>吧！')
+			}
+			
 			/*window.open(updatepath,'_system');
 			setTimeout(function(){
 				navigator.app.exitApp();
