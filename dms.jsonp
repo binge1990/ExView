@@ -34,16 +34,16 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.4.8";
-			var newestversioninfo="2018.01.01 2.4.8<br>1.主页收藏列表如果在没有收藏时显示链接跳转<br>2.修复记录上传云端失败的问题<br>3.强化记录在线同步功能<br>4.修复QQ登录有时无法切换账号问题<br>5.修改一些信息";
+			var newestversion="2.4.9";
+			var newestversioninfo="2018.02.14 2.4.9<br>1.修复主页右上角刷新按钮不刷新推荐列表问题<br>2.优化获取来源列表提示框<br>3.修复最新版webview乱码问题<br>4.优化小说阅读<br>5.修复一些数据请求小问题<br>6.全局设置画布背景选项可以开关文章阅读器背景图片<br>7.进一步修复最新版webview乱码问题<br>8.增加自动变换主题色功能<br>9.调整封面缩放方式<br>10.修复主页右上刷新按钮在某些机型出现错误的bug<br>11.增加封面缩放方式选项<br>12.改进多线程请求模型<br>13.启用队列处理以缓解大并发请求<br>14.修复epk格式本地来源文件安装失败问题<br>15.小说缓存缓存插图问题";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.1.9";
-		var newestversioninfo="2018.01.24 0.1.9<br>1.增加在线升级机制，不用手动下载覆盖<br>2.把数据目录修改为应用目录下面";
+		var newestversion="0.2.0";
+		var newestversioninfo="2018.02.14 0.2.0<br>1.修复主页右上角刷新按钮不刷新推荐列表问题<br>2.优化获取来源列表提示框<br>3.修复最新版webview乱码问题<br>4.优化小说阅读<br>5.修复一些数据请求小问题<br>6.全局设置画布背景选项可以开关文章阅读器背景图片<br>7.进一步修复最新版webview乱码问题<br>8.增加自动变换主题色功能<br>9.调整封面缩放方式<br>10.修复主页右上刷新按钮在某些机型出现错误的bug<br>11.增加封面缩放方式选项<br>12.改进多线程请求模型<br>13.启用队列处理以缓解大并发请求<br>14.修复epk格式本地来源文件安装失败问题<br>15.小说缓存缓存插图问题";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
