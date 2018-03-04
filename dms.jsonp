@@ -42,8 +42,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.1";
-		var newestversioninfo="2018.03.04 0.2.1<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题";
+		var newestversion="0.2.2";
+		var newestversioninfo="2018.03.04 0.2.2<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题<br>4.视频下载断点续传";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
