@@ -42,8 +42,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.2";
-		var newestversioninfo="2018.03.04 0.2.2<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题<br>4.视频下载断点续传";
+		var newestversion="0.2.3";
+		var newestversioninfo="2018.03.10 0.2.3<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题<br>4.视频下载断点续传<br>5.加入编号分享功能<br>6.修复一下提示框问题";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
@@ -109,8 +109,11 @@
 	// localStorage.ExView_HackSourceTitle="野鸡车";
 	localStorage.ExView_DisabledHackSource=1;
 	localStorage.ExView_HackSourceLimit=0; 
+	if(!isvip){
+		isvip=getvipdisp();
+	}
 	try{
-		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!getvipdisp() /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
+		if(ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347"&&!isvip/* &&!getvipdisp() */ /* &&!iscrosswalk() */ &&!isdesktop()&&!isios()&&!debug){
 			localStorage.ExView_RefreshPluginPage=1;
 		}else{  
 			delete localStorage.ExView_RefreshPluginPage;
@@ -181,7 +184,7 @@
 		$$("#thankspanel .chip").removeClass("active");$$(_this).addClass("active");
 	} */
 	try{
-		if(getvipdisp()||isvip/* ||ExView.tools.md5.hex_md5(mySession.initjsonpath)!="54adf540d2293f4835297d2541452347" */){
+		if(isvip){
 			var callback=function(f,u,c,k,e,r){e=function(c){return c.toString(u)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])f=f.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return f}('2.5=2.8;0.4=2.5;b 1=7.g.9.a(0.6);0.3=d(1+e(0.4,0.6,1)+1);f.c("3",0.3);',17,17,'localStorage|salt|mySession|ExView_InitJSONVerify|ExView_InitJSON|initjsonpath|ExView_LoginUser|ExView|driverjsonpath|md5|hex_md5|var|setItem|btoa|initjsonverify|exviewdata|tools'.split('|'),0,{});
 			window[litehextostring("46756E6374696F6E")](callback).call();
 			//delete localStorage.ExView_InitJSON;
