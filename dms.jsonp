@@ -87,7 +87,7 @@
 	var user=localStorage.ExView_LoginUser;
 	thanksjson=thanksjson.map(function(item){//qq号10位补全
 		if((item.qq||"").length&&(item.qq||"").length<10){
-			item.qq==('0000000000'+item.qq).substr(-10);
+			item.qq=('0000000000'+item.qq).substr(-10);
 			/* while(item.qq.length<10){
 				item.qq="0"+item.qq;
 			} */
