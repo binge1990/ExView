@@ -42,8 +42,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.3";
-		var newestversioninfo="2018.03.10 0.2.3<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题<br>4.视频下载断点续传<br>5.加入编号分享功能<br>6.修复一下提示框问题";
+		var newestversion="0.2.4";
+		var newestversioninfo="2018.03.11 0.2.4<br>1.提升请求模块<br>2.支持视频下载<br>3.修复若干小问题<br>4.视频下载断点续传<br>5.加入编号分享功能<br>6.修复一下提示框问题<br>7.修复新QQ账号登录无法同步收藏";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
