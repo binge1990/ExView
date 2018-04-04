@@ -136,7 +136,7 @@
 	try{
 		if(window.debug&&nowversion!=newestversion){
 			if(typeof(updateDesktopVersion)=='function'&&onlineupdate) {
-				shownotice('各位dalao,新版本发布了，赶紧去<a href="updateDesktopVersion(\''+onlineupdatepath+'\',\''+newestversion+'\')" target="_system">更新</a>吧！');
+				shownotice('各位dalao,新版本发布了，赶紧去<a href="javascript:updateDesktopVersion(\''+onlineupdatepath+'\',\''+newestversion+'\')" target="_system">更新</a>吧！');
 			} else {
 				shownotice('各位dalao,新版本发布了，赶紧去<a href="'+updatepath+'" target="_system">更新</a>吧！')
 			}
