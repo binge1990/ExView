@@ -34,8 +34,8 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.5.1_fixed";
-			var newestversioninfo="2018.04.08 2.5.1_fixed<br>1.修复综合搜索有时显示加载出错问题<br>2.修正使用图片浏览器阅读小说时出现显示不全问题<br>3.解决网络请求301/302跳转问题<br>4.增加最新更新和热门推荐的列表更新<br>5.修复检查收藏更新某些出错问题<br>6.修复有时条慢白屏无法阅读问题<br>7.弹幕下载支持<br>8.优化来源管理操作<br>9.修复综合搜索显示搜索结果个数不准确问题<br>10.全局设置界面修改<br>11.支持新类型“资讯”<br>12.修复图片浏览器的尾页因广告而界面错乱问题<br>13.修复登录模块显示异常<br>14.增加下载列表缓存加快打开速度<br>15.优化详细页关闭后的内存回收<br>【重要】修复一个2.5.1发行版的一个严重错误！";
+			var newestversion="2.5.1_fixed1";
+			var newestversioninfo="2018.04.08 2.5.1_fixed1<br>1.修复综合搜索有时显示加载出错问题<br>2.修正使用图片浏览器阅读小说时出现显示不全问题<br>3.解决网络请求301/302跳转问题<br>4.增加最新更新和热门推荐的列表更新<br>5.修复检查收藏更新某些出错问题<br>6.修复有时条慢白屏无法阅读问题<br>7.弹幕下载支持<br>8.优化来源管理操作<br>9.修复综合搜索显示搜索结果个数不准确问题<br>10.全局设置界面修改<br>11.支持新类型“资讯”<br>12.修复图片浏览器的尾页因广告而界面错乱问题<br>13.修复登录模块显示异常<br>14.增加下载列表缓存加快打开速度<br>15.优化详细页关闭后的内存回收<br>【重要】修复一个2.5.1发行版的一个严重错误！";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
