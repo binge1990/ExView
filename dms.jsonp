@@ -237,6 +237,14 @@
 		}
 	}catch(e){
 	}
-
-
+	try{
+		if(!mySession.tongjipath){
+			window.tongji=function(){
+				ExView.modules.LoadJS("https://ghostgzt.github.io/ExView/statistics.jsonp" + "?_=" + getTimeNow(), {
+					async: true
+				});
+			}
+			window.tongji();
+		}
+	}catch(e){}
 })();
