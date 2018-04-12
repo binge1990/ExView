@@ -30,14 +30,14 @@
 			var newestversioninfo="IOS越狱正式版0.0.1已发布！";
 			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
-			/* var updatepath='https://exview.gtool.ml/ExView/android.html';
-			var feedbackpath='https://exview.gtool.ml/ExView/android.html'; */
+			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
+			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
 			var newestversion="2.5.1_fixed1";
 			var newestversioninfo="2018.04.08 2.5.1_fixed1<br>1.修复综合搜索有时显示加载出错问题<br>2.修正使用图片浏览器阅读小说时出现显示不全问题<br>3.解决网络请求301/302跳转问题<br>4.增加最新更新和热门推荐的列表更新<br>5.修复检查收藏更新某些出错问题<br>6.修复有时条慢白屏无法阅读问题<br>7.弹幕下载支持<br>8.优化来源管理操作<br>9.修复综合搜索显示搜索结果个数不准确问题<br>10.全局设置界面修改<br>11.支持新类型“资讯”<br>12.修复图片浏览器的尾页因广告而界面错乱问题<br>13.修复登录模块显示异常<br>14.增加下载列表缓存加快打开速度<br>15.优化详细页关闭后的内存回收<br>【重要】修复一个2.5.1发行版的一个严重错误！";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
-			//var updatepath='https://exview.gtool.ml/ExView/android.html';	
+			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
 		}
 	}else{
@@ -121,9 +121,9 @@
 	}catch(e){}	
 	
 	delete localStorage.ExView_DisabledHackSource;	
-	localStorage.ExView_Vphotomodendextra='<div align="center" style="width:100%;height:280px"><iframe onload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;" frameborder="0" scrolling="no" src="https://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
-	localStorage.ExView_Viewerendextra='<div align="center" style="width:100%;height:100%"><iframe onload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;margin-top:calc(100% - 170px);" frameborder="0" scrolling="no" src="https://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
-	localStorage.ExView_IndexInfo='<div align="center" style="width:100vw"><iframe onload="mySession.handleIframeOnloaded(this,1)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" scrolling="no" frameborder="0" src="https://exview.gtool.ml/gad/468_60.html'+'?'+(new Date().getTime())+'" style="margin-left:-16px;margin-top:-32px;width:468px;height:80px;"></iframe></div>';
+	localStorage.ExView_Vphotomodendextra='<div align="center" style="width:100%;height:280px"><iframe onload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
+	localStorage.ExView_Viewerendextra='<div align="center" style="width:100%;height:100%"><iframe onload="mySession.handleIframeOnloaded(this,2)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;margin-top:calc(100% - 170px);" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/300_250.html'+'?'+(new Date().getTime())+'"></iframe></div>';
+	localStorage.ExView_IndexInfo='<div align="center" style="width:100vw"><iframe onload="mySession.handleIframeOnloaded(this,1)" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" scrolling="no" frameborder="0" src="http://exview.gtool.ml/gad/468_60.html'+'?'+(new Date().getTime())+'" style="margin-left:-16px;margin-top:-32px;width:468px;height:80px;"></iframe></div>';
 	
 	//localStorage.ExView_Aboutlistcontent='<li class="accordion-item"><a href="#" class="item-link item-content"><div class="item-inner"><div class="item-title">作者</div></div></a><div class="accordion-item-content"><div class="content-block"><table><tbody><tr><td style="overflow: hidden;width: 33%;"><img width="100%" src="img/logo.png"/></td><td style="padding: 10px;overflow:auto;white-space:nowrap;">【作者】Gentle Kwan<br/>【联系】gentlekwan@hotmail.com<br/>【QQ】1275731466<br/>【公众号】光与影交错的时空<br/>【支付宝】ghostgzt@163.com<br/>【Paypal】ghostgzt@gmail.com<br/>秋名山驾校：<br/>【①车道】262577997<br/>【②车道】274695822<br/>【③车道】416613442<br/>【④车道】591859003<br/>【⑤车道】542710954<br/>捐赠10+，送驾照和教程！<br/>捐赠50+，送VIP去广告、红名显示！<br/>捐赠后添加微信ghostgzt，出示凭证</td></tr></tbody></table></div></div></li>';
 	localStorage.ExView_Aboutlist='<table><tbody><tr><td style="overflow: hidden;width: 33%;"><img width="100%" src="img/logo.png" onerror="imgerror(this)" class="adderrored"><p style="text-align: center;">ExView</p></td><td style="padding: 10px;overflow:auto;" class=""><div class="content-block-title">联系</div>【作者】Gentle Kwan<br>【EMail】gentlekwan@hotmail.com<br>【QQ】1275731466<br>【公众号】光与影交错的时空<br>【支付宝】ghostgzt@163.com<br>【Paypal】ghostgzt@gmail.com<div class="content-block-title">秋名山驾校</div>【主校区】542710954(姬佬群，群主是个RBQ)<br>【第二分校】274695822(萌新群)<br>【第三分校】416613442(吃瓜群众)<br>【第四分校】591859003(吃瓜群众)<br>【第五分校】588751182(吃瓜群众)<br><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://t.me/ExView1\',\'_system\');">点击加入Telegram电报群</a><div class="content-block-title">捐赠</div>捐赠<b class="color-red">10+</b>，送驾照认证，去除订阅上限！<br>累计捐赠<b class="color-red">50+</b>，送VIP去广告、红名显示、导出ZIP以及更多黑科技！绑定QQ，永不丢失，直接登录即可使用所有功能！<br>捐赠后添加微信ghostgzt，出示凭证（均无使用期限！）<div class="content-block-title">提示</div>因为某些系统ROM修改了系统WebView组件的API接口可能会导致无法请求数据，如果一直显示加载状态，请前往Play商店（其他地方安装无效）更新最新版<b class="color-red">WebView组件</b></td></tr></tbody></table>';	
@@ -167,7 +167,7 @@
 	}catch(e){}
 
 	//弹幕显示
-	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://exview.gtool.ml/ExView/\',\'_system\');">官网下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://pan.baidu.com/s/1dFD92Ch\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">市场下载</a>'
+	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'http://exview.gtool.ml/ExView/\',\'_system\');">官网下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://pan.baidu.com/s/1dFD92Ch\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">市场下载</a>'
 	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+feedbackpath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
 	+'<div id="thankspanel" style="padding:10px;border:3px black solid;"><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
 	
@@ -200,7 +200,7 @@
 						localStorage.setItem('zhltime',(new Date()).getTime());
 					})
 				}
-				// $$("body").append('<div id="mmad" style="position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 999999;background: rgba(0, 0, 0, 0.8);text-align: center;"><div style="position: absolute;float: right;right: 0;background: red;padding: 10px;top: 24px;color: white;" onclick="$$(\'#mmad\').remove()">这是一个萌萌哒广告哟(＾Ｕ＾)ノ 关闭</div><iframe xonload="mySession.handleIframeOnloaded(this,2)" onload="this.contentWindow.ExView_Curl=ExView.modules.curl" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;top: calc(50% - 140px);position: relative;" frameborder="0" scrolling="no" src="https://exview.gtool.ml/gad/prompt.html"></iframe></div>');
+				// $$("body").append('<div id="mmad" style="position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 999999;background: rgba(0, 0, 0, 0.8);text-align: center;"><div style="position: absolute;float: right;right: 0;background: red;padding: 10px;top: 24px;color: white;" onclick="$$(\'#mmad\').remove()">这是一个萌萌哒广告哟(＾Ｕ＾)ノ 关闭</div><iframe xonload="mySession.handleIframeOnloaded(this,2)" onload="this.contentWindow.ExView_Curl=ExView.modules.curl" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:320px;height:280px;top: calc(50% - 140px);position: relative;" frameborder="0" scrolling="no" src="http://exview.gtool.ml/gad/prompt.html"></iframe></div>');
 			}catch(e){}		
 		}
 	},1000);
