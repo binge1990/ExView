@@ -42,8 +42,8 @@
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.14";
-		var newestversioninfo="2018.04.08 0.2.14<br>1.增加对m3u8格式视频支持";
+		var newestversion="0.2.15";
+		var newestversioninfo="2018.04.15 0.2.15<br>1.增加对m3u8格式视频支持<br>2.修复一些列表缓存问题";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
@@ -169,7 +169,7 @@
 	//弹幕显示
 	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'http://exview.gtool.ml/ExView/\',\'_system\');">官网下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://pan.baidu.com/s/1dFD92Ch\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">市场下载</a>'
 	
-	+'<div id="thankspanel" style="/* padding:10px; *//* border: 3px #009688 solid; */padding-top:16px;" '+(typeof(getnowtheme)=="function"?'class="color-'+getnowtheme()+'"':'')+'><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
+	+'<div id="thankspanel" style="/* padding:10px; *//* border: 3px #009688 solid; */padding-top:16px;" '+(typeof(getnowtheme)=="function"?('class="color-'+getnowtheme()+'"'):'')+'><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
 	
 	+(thanksjson.map(function(user,i){return getthanksuser(user,i);}).join(""))
 	
