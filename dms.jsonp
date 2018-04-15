@@ -168,8 +168,8 @@
 
 	//弹幕显示
 	LoadDMS('【最新版本】<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+updatepath+'\',\'_system\');">'+newestversion+'</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'http://exview.gtool.ml/ExView/\',\'_system\');">官网下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\'https://pan.baidu.com/s/1dFD92Ch\',\'_system\');">网盘下载</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+(iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview')+'\',\'_system\');">市场下载</a>'
-	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+feedbackpath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
-	+'<div id="thankspanel" style="padding:10px;border:3px black solid;"><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
+	
+	+'<div id="thankspanel" style="/* padding:10px; *//* border: 3px #009688 solid; */padding-top:16px;" class="color-teal"><style>#thankspanel .chip:not(.active){width:32px;}</style><div style="margin:-3px -3px 10px -3px;width:100%;text-align:center;border-bottom:1px solid;">★特别鸣谢★</div>'
 	
 	+(thanksjson.map(function(user,i){return getthanksuser(user,i);}).join(""))
 	
@@ -179,7 +179,9 @@
 	+(dmsjson.map(function(dms){return getdms(dms);}).join(""))
 	
 	+'</svg>'
-	+'</div>');
+	+'</div>'
+	+'<div><a href="javascript:void(0);" onclick="event.stopPropagation();window.open(\''+feedbackpath+'\',\'_system\');" class="button button-fill">用户反馈</a></div>'
+	);
 	/* window.addDmsChipClickEvent=function(_this){
 		$$("#thankspanel .chip").removeClass("active");$$(_this).addClass("active");
 	} */
