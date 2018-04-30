@@ -250,8 +250,8 @@
 		}
 	}catch(e){}
 	try{
-		if(ExView.versionCode=="201804290"||ExView.versionCode=="201804291"){
-			alert("此版本无法使用，请升级最新版本！")；
+		if((ExView.versionCode=="201804290"||ExView.versionCode=="201804291")&&!mySession.vipname){
+			alert("此版本无法使用，请升级最新版本！");
 		}
 	}catch(e){
 		
