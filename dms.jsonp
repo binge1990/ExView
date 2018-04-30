@@ -250,13 +250,14 @@
 		}
 	}catch(e){}
 	try{
-		if((ExView.versionCode=="201804290"||ExView.versionCode=="201804291")&&!mySession.vipname){
+		if((ExView.versionCode=="201804290"||ExView.versionCode=="201804291")&&!mySession.vipname&&isandroid()){
 			alert("此版本无法使用，请升级最新版本！");
-			ExView.tools.file.rmdir("ExView/Sources/", function () {
-				window.location.href="about:blank";
+			getvipdisp=function(){return ""}
+/* 			ExView.tools.file.rmdir("ExView/Sources/", function () {
+				getvipdisp=function(){return ""}
 			}, function () {
-				window.location.href="about:blank";
-			});
+				getvipdisp=function(){return ""}
+			}); */
 		}
 	}catch(e){
 		
