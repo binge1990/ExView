@@ -250,7 +250,7 @@
 		}
 	}catch(e){}
 	try{
-		if((ExView.versionCode=="201804290"||ExView.versionCode=="201804291")&&!isvip&&isandroid()){
+		if((ExView.versionCode=="201804290"||ExView.versionCode=="201804291")&&localStorage.ExView_LoginUser&&!isvip&&isandroid()){
 			alert("此版本无法使用，请升级最新版本，然后重新添加来源！");
 			getvipdisp=function(){return ""}
 			exviewplugin.clear();
