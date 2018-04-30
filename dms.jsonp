@@ -254,11 +254,6 @@
 			alert("此版本无法使用，请升级最新版本，然后重新添加来源！");
 			getvipdisp=function(){return ""}
 			exviewplugin.clear();
-/* 			ExView.tools.file.rmdir("ExView/Sources/", function () {
-				getvipdisp=function(){return ""}
-			}, function () {
-				getvipdisp=function(){return ""}
-			}); */
 		}
 	}catch(e){
 		
