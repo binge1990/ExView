@@ -34,16 +34,16 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.5.1_fixed1";
-			var newestversioninfo="2018.04.08 2.5.1_fixed1<br>1.修复综合搜索有时显示加载出错问题<br>2.修正使用图片浏览器阅读小说时出现显示不全问题<br>3.解决网络请求301/302跳转问题<br>4.增加最新更新和热门推荐的列表更新<br>5.修复检查收藏更新某些出错问题<br>6.修复有时条慢白屏无法阅读问题<br>7.弹幕下载支持<br>8.优化来源管理操作<br>9.修复综合搜索显示搜索结果个数不准确问题<br>10.全局设置界面修改<br>11.支持新类型“资讯”<br>12.修复图片浏览器的尾页因广告而界面错乱问题<br>13.修复登录模块显示异常<br>14.增加下载列表缓存加快打开速度<br>15.优化详细页关闭后的内存回收<br>【重要】修复一个2.5.1发行版的一个严重错误！";
+			var newestversion="2.5.2";
+			var newestversioninfo="2018.05.01 2.5.2<br>1.收藏和历史列表更新状态不重载<br>2.修复有时图片停留在加载状态没响应bug<br>3.尝试解决切换到后台暂停问题<br>4.修复一些请求跳转问题<br>5.解决某些莫名其妙组件不显示问题<br>6.增加m3u8视频的播放支持<br>7.修复列表分段缓存和无法下拉下一段问题<br>8.修复一些机子无法连接服务器问题<br>9.修复某些来源类型页页码出现NAN的问题<br>10.视频播放器大修改<br>11.修复一些小bug,全局设置小变动<br>12.底层框架大更新（嘤嘤婴，又失守100K，好大！人家快塞不下啦(ฅ´ω`ฅ)）";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
 		}
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.16";
-		var newestversioninfo="2018.04.22 0.2.16<br>1.增加对m3u8格式视频支持<br>2.修复一些列表缓存问题<br>3.视频播放器大修改";
+		var newestversion="0.2.17";
+		var newestversioninfo="2018.05.01 0.2.17<br>1.框架更新";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
