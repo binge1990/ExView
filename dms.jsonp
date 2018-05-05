@@ -42,8 +42,8 @@
 		}
 	}else if(isdesktopmac()){
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.17";
-		var newestversioninfo="2018.05.01 0.2.17<br>修复一些小bug";
+		var newestversion="0.2.18";
+		var newestversioninfo="2018.05.01 0.2.18<br>修复一些小bug";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/platforms/mac/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
