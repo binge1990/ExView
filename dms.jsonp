@@ -208,7 +208,7 @@
 		if(/* !getvipdisp() */!isdesktop()){
 			try{
 				if((new Date()).getTime()-parseInt(localStorage.getItem('zhltime')||'0')>86400000){
-					ExView.fw.alert("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)",sessionStorage.modaltitleextra,function(){
+					ExView.fw.alert("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)<br>插播：一群被炸，新群496754216",sessionStorage.modaltitleextra,function(){
 						window.open('https://qr.alipay.com/c1x01637imakv0yjnfcvz80','_system');
 						localStorage.setItem('zhltime',(new Date()).getTime());
 					})
