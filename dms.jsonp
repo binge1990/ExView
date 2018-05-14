@@ -211,7 +211,7 @@
 		if(/* !getvipdisp() */!isdesktop()){
 			try{
 				if((new Date()).getTime()-parseInt(localStorage.getItem('zhltime')||'0')>86400000){
-					ExView.fw.alert("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)<br>插播：一群被炸，新群496754216",sessionStorage.modaltitleextra,function(){
+					ExView.fw[isvip?"confirm":"alert"]("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)",sessionStorage.modaltitleextra,function(){
 						window.open('https://qr.alipay.com/c1x01637imakv0yjnfcvz80','_system');
 						localStorage.setItem('zhltime',(new Date()).getTime());
 					})
@@ -273,7 +273,7 @@
 		
 	}
 	try{
-		ExView.fw.alert('<div style="height:560px;"><a href="javascript:void(0);" onclick="fileopener(\'https://shang.qq.com/wpa/qunwpa?idkey=64c0704604bda943d300332f2fe10cd41a1ba96fc79bad7a51471b5b9088bba9\',null,true)" class=""><div style="position: fixed;background: rgba(0,0,0,.5);width: 232px;bottom: 56px;text-align: center;color: white;text-decoration: underline;">满心欢喜地加群吧:496754216</div></a><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/9e5d09d5b31c870168108a5b2b7f9e2f0608ff9d.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/e36d79f3b2119313a919c50d69380cd790238de0.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/767292395343fbf2a5769c9ebc7eca8064388fe0.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/372f238a87d6277f52b40a8524381f30e824fc9d.jpg" onerror="imgerror(this)" class="adderrored"></div>',"母亲节快乐！");
+		ExView.fw.alert('<div style="height:560px;"><a href="javascript:void(0);" onclick="fileopener(\'https://shang.qq.com/wpa/qunwpa?idkey=64c0704604bda943d300332f2fe10cd41a1ba96fc79bad7a51471b5b9088bba9\',null,true)" class=""><div style="position: fixed;background: rgba(0,0,0,.5);width: 232px;bottom: 56px;text-align: center;color: white;text-decoration: underline;">满心欢喜地加群吧:496754216</div></a><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/9e5d09d5b31c870168108a5b2b7f9e2f0608ff9d.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/e36d79f3b2119313a919c50d69380cd790238de0.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/767292395343fbf2a5769c9ebc7eca8064388fe0.jpg" onerror="imgerror(this)" class="adderrored"><br><img width="100%" src="https://imgsa.baidu.com/forum/pic/item/372f238a87d6277f52b40a8524381f30e824fc9d.jpg" onerror="imgerror(this)" class="adderrored"></div>',"满操心的(ฅ´ω`ฅ)");
 	}catch(e){
 		
 	}	
