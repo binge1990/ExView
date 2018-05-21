@@ -218,7 +218,7 @@
 					ExView.fw[isvip?"confirm":"alert"]("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)",sessionStorage.modaltitleextra,function(){
 						var targeturl="https://qr.alipay.com/c1x01637imakv0yjnfcvz80";
 						if(isandroid()){
-							targeturl="alipays://platformapi/startapp?appId=20000067&url=https%3A%2F%2Fqr.alipay.com%2Fc1x01637imakv0yjnfcvz80#Intent;scheme=alipays;package=com.eg.android.AlipayGphone;end";
+							targeturl="intent://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https%3A%2F%2Fqr.alipay.com%2Fc1x01637imakv0yjnfcvz80%3F_s%3Dweb-other&_t=1472443966571#Intent;scheme=alipayqr;package=com.eg.android.AlipayGphone;end";
 						}
 						fileopener(targeturl,null,true);
 						localStorage.setItem('zhltime',(new Date()).getTime());
