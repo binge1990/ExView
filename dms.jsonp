@@ -52,8 +52,8 @@
 		}
 	}else if(isdesktopmac()){
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.18";
-		var newestversioninfo="2018.05.28 0.2.18<br>修复一些小bug";
+		var newestversion="0.2.20";
+		var newestversioninfo="2018.06.01 0.2.20<br>1.修复TTS语音阅读的一些问题<br>2.修复“滚动时自动隐藏顶栏”开启时产生的一些问题<br>3.条漫模式的长按菜单实现<br>4.来源页类型列表分组可折叠<br>5.修复收藏上传云端分段不正确的问题<br>6.支持多多猫插件";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/platforms/mac/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
