@@ -36,8 +36,8 @@
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.version;
-			var newestversion="2.3.8";
-			var newestversioninfo="IOS越狱正式版0.0.1已发布！";
+			var newestversion="2.5.3";
+			var newestversioninfo="IOS越狱正式版2.5.3已发布！";
 			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
