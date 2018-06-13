@@ -230,7 +230,7 @@
 			}catch(e){}		
 		}
 	},1000);
-	try{
+	/* try{
 		if(isios()){
 			mySession.initjsonpath="RtuFrCI"
 			localStorage.ExView_InitJSON=mySession.initjsonpath;
@@ -262,7 +262,7 @@
 			// return true;
 		}
 	}catch(e){
-	}
+	} */
 	try{
 		if(!mySession.tongjipath){
 			window.tongji=function(){
