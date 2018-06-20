@@ -217,7 +217,7 @@
 		if(/* !getvipdisp() */!isdesktop()){
 			try{
 				if((new Date()).getTime()-parseInt(localStorage.getItem('zhltime')||'0')>86400000){
-					ExView.fw[isvip?"confirm":"alert"]("ExView天天派红包,赶紧去领红包吧！<br>(领到红包赶紧用掉,有效期3天)",sessionStorage.modaltitleextra,function(){
+					ExView.fw[isvip?"confirm":"alert"]("ExView天天派红包,赶紧去领红包吧！<br>(记得领下面的余额宝消费红包，领到红包赶紧用掉,有效期3天)",sessionStorage.modaltitleextra,function(){
 						var targeturl="https://qr.alipay.com/c1x01637imakv0yjnfcvz80";
 						// if(isandroid()){
 							targeturl="alipayqr://platformapi/startapp?saId=10000007&qrcode="+encodeURIComponent(targeturl);
