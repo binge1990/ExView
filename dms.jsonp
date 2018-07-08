@@ -52,8 +52,8 @@
 		}
 	}else if(isdesktopmac()){
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.23";
-		var newestversioninfo="2018.07.08 0.2.23<br>猫咪三连";
+		var newestversion="0.2.22";
+		var newestversioninfo="2018.06.25 0.2.22<br>支持多多猫插件<br>支持爱看阅读书源";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/platforms/mac/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
