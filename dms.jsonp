@@ -52,16 +52,16 @@
 		}
 	}else if(isdesktopmac()){
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.23";
-		var newestversioninfo="2018.07.08 0.2.23<br>猫咪三连";
+		var newestversion="0.2.24";
+		var newestversioninfo="2018.07.08 0.2.24<br>1.猫咪三连<br>2.升级更新系统";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/platforms/mac/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
 		var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//'http://www.coolapk.com/apk/com.gentle.exview';
 	}else{
 		var nowversion=ExView.nativeversion;
-		var newestversion="0.2.23";
-		var newestversioninfo="2018.07.08 0.2.23<br>猫咪三连";
+		var newestversion="0.2.24";
+		var newestversioninfo="2018.07.08 0.2.24<br>1.猫咪三连<br>2.升级更新系统";
 		var updatepath="https://pan.baidu.com/s/1dFD92Ch";
 		var onlineupdatepath="https://ghostgzt.github.io/ExView/platforms/windows/MoeRuntimeDesktop.bin";
 		onlineupdate=true;
