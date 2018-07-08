@@ -36,8 +36,8 @@
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.iosversion||ExView.version;
-			var newestversion="2.5.3_beta2";
-			var newestversioninfo="2018.06.25 2.5.3_beta2<br>支持多多猫插件<br>支持爱看阅读书源";
+			var newestversion="2.5.4";
+			var newestversioninfo="2018.07.09 2.5.4<br>1.支持猫咪三连<br>2.修正若干问题";
 			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
