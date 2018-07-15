@@ -36,8 +36,8 @@
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.iosversion||ExView.version;
-			var newestversion="2.5.4";
-			var newestversioninfo="2018.07.09 2.5.4<br>1.支持猫咪三连<br>2.修正若干问题";
+			var newestversion="2.5.4_beta2";
+			var newestversioninfo="2018.07.16 2.5.4_beta2<br>1.支持猫咪三连<br>2.支持AVNight视频<br>3.支持后台运行";
 			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
