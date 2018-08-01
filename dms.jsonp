@@ -36,8 +36,8 @@
 	if(!isdesktop()){
 		if(isios()){
 			var nowversion=ExView.iosversion||ExView.version;
-			var newestversion="2.5.4_beta4";
-			var newestversioninfo="2018.07.30 2.5.4_beta4<br>1.支持猫咪三连<br>2.支持AVNight视频<br>3.支持后台运行<br>4.修复视频不能下载问题<br>5支持.m3u8视频下载";
+			var newestversion="2.5.5";
+			var newestversioninfo="2018.08.01 2.5.5<br>1.添加请求arraybuffer数据类型<br>2.视频播放添加竖屏按钮<br>3.添加对 猫咪社区 支持<br>4.支持后台运行<br>5.添加对 AVNight 支持<br>6.收藏记录是否使用条漫模式<br>7.详细页隐藏超长章节<br>8.添加对 搜书神器 支持<br>9.修复上个版本无法下载视频的问题<br>10.支持m3u8视频下载<br>11.AVNight视频和猫咪视频添加下载功能<br>12.修复一些老来源只能加载2页列表问题";
 			var updatepath='https://pan.baidu.com/s/1dFD92Ch';	
 			//var feedbackpath='http://www.coolapk.com/apk/com.gentle.exview';
 			/* var updatepath='http://exview.gtool.ml/ExView/android.html';
