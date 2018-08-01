@@ -44,8 +44,8 @@
 			var feedbackpath='http://exview.gtool.ml/ExView/android.html'; */
 		}else{
 			var nowversion=ExView.version;
-			var newestversion="2.5.4";
-			var newestversioninfo="2018.07.01 2.5.4<br>1.收藏管理添加未订阅来源<br>2.主页删除来源时提示删除相关数据<br>3.收藏管理功能界面修改<br>4.优化 强制关闭动画效果 功能<br>5.支持 爱看阅读 的在线书源<br>6.类型分类列表折叠功能<br>7.图片浏览器的黑白和镜面效果修正<br>8.修复强制关闭动画效果后图片拖动问题<br>9.增加对【快猫VIP视频】的支持<br>10.增加对【猫咪视频】的支持";
+			var newestversion="2.5.5";
+			var newestversioninfo="2018.08.01 2.5.5<br>1.添加请求arraybuffer数据类型<br>2.视频播放添加竖屏按钮<br>3.添加对 猫咪社区 支持<br>4.支持后台运行<br>5.添加对 AVNight 支持<br>6.收藏记录是否使用条漫模式<br>7.详细页隐藏超长章节<br>8.添加对 搜书神器 支持<br>9.修复上个版本无法下载视频的问题<br>10.支持m3u8视频下载<br>11.AVNight视频和猫咪视频添加下载功能<br>12.修复一些老来源只能加载2页列表问题";
 			var updatepath=iscrosswalk()?'http://www.coolapk.com/apk/com.gentle.exview.plus':'http://www.coolapk.com/apk/com.gentle.exview';
 			//var updatepath='http://exview.gtool.ml/ExView/android.html';	
 			var feedbackpath="http://wpa.qq.com/msgrd?v=3&uin=1275731466&site=qq&menu=yes";//updatepath;			
